@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Buy Me An ETH",
+  "description": "Support creators while browsing the web.",
+  "version": "0.1111",
+  "content_scripts": [
+      {
+          "matches": [
+              "*://*/*"
+          ],
+          "js": [
+              "index.js"
+          ],
+          "css": [
+            "index.css"
+          ],
+          "run_at": "document_end"
+      }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+     "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
